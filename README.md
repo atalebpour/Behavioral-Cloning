@@ -47,7 +47,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually.
 
 Training data was chosen to keep the vehicle driving on the road. The data was collected from multiple drivers to diversify the training data. A combination of center, righ, and left side cameras were used to calibrate the data.
 
-****Validation*****
+****Validation****
 
 The simulator was run after each calibration to see how well the vehicle stays around the track. There is only one spot that the vehicle fells off the track (the first curve). Additional data was collected from that curve to improve the model.
 

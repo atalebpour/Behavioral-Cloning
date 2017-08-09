@@ -53,47 +53,14 @@ The simulator was run after each calibration to see how well the vehicle stays a
 
 At the end of the process, the vehicle is able to drive autonomously around the track without completely leaving the road.
 
-**** Final Model Architecture ****
+****Final Model Architecture****
 
 The final model architecture is as follows:
 
 ![alt text][image1]
 
 
+****Creation of the Training Set & Training Process****
 
-
-
-
-
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
-
-![alt text][image1]
-
-####3. Creation of the Training Set & Training Process
-
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
-
-![alt text][image2]
-
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
-
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
-
-
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
-
+Data from multiple drivers were used to reduce the bias towards one single driver. Each driver did multiple laps around the track.
+After the collection process, the total of 100708 number of data points were collected. 
